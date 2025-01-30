@@ -1,0 +1,98 @@
+/* 🌟 Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Empêche le dépassement de la page */
+}
+
+/* 🌟 Conteneur principal avec scroll automatique si nécessaire */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-height: 90vh; /* Empêche le dépassement de l'écran */
+    overflow-y: auto; /* Active le scroll si nécessaire */
+    text-align: center;
+}
+
+/* 🌟 Titres */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🌟 Champs de saisie */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🌟 Champs spéciaux */
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* 🌟 Bouton d’envoi */
+button {
+    background: #929292;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #d6dce2;
+}
+
+/* 🌟 Style des erreurs */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* 🌟 Amélioration du responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        max-height: 80vh; /* Adapte la hauteur pour les petits écrans */
+    }
+}
+
+/* 🌟 Avatar sur la page de bienvenue */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #007bff;
+}
